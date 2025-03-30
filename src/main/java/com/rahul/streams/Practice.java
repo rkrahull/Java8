@@ -2,10 +2,8 @@ package com.rahul.streams;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Optional;
-import java.util.stream.Collectors;
 
-public class Prcatice {
+public class Practice {
     public static void main(String[] args) {
         List<Integer> list = Arrays.asList(8,4,1,6,3,9,5,2,1,4,3,2,8,9);
 
