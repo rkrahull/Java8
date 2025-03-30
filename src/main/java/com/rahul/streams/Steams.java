@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class Practice {
+public class Steams {
     public static void main(String[] args) {
         List<String> names = Arrays.asList("Rahul","Rohit","Kunal","Pulkit","Kartik","Rahul","Kunal");
         List<String> namesUpper = names.stream().map(String::toUpperCase).collect(Collectors.toList());
