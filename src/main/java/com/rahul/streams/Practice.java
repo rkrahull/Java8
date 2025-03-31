@@ -2,6 +2,8 @@ package com.rahul.streams;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class Practice {
     public static void main(String[] args) {
@@ -33,6 +35,12 @@ public class Practice {
 
         int secLargest = list.stream().distinct().sorted((a, b)->(b-a)).skip(1).findFirst().get();
         System.out.println(secLargest);
+
+        //Reverse a list using stream
+        List<String> fruits = Arrays.asList("Apple","Banana","Guava","Grapes","Mango");
+        List<String> reversedFruits = IntStream.range(0,fruits.size()).map(i->fruits.size()-1-i).mapToObj(fruits::get).collect(Collectors.toList());
+        System.out.println(reversedFruits);
+
 
     }
 }
